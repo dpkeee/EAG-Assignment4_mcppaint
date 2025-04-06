@@ -1,0 +1,5 @@
+mcp==<latest_version>  # Replace <latest_version> with the actual version if known
+Pillow==<latest_version>  # Replace <latest_version> with the actual version if known
+pywinauto==<latest_version>  # Replace <latest_version> with the actual version if known
+pyautogui==<latest_version>  # Replace <latest_version> with the actual version if known
+pywin32==<latest_version>  # Replace <latest_version> with the actual version if known

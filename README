@@ -1,0 +1,91 @@
+
+
+# MCP Client-Server Project
+
+This project implements a client-server architecture using the Model Context Protocol (MCP). It provides various mathematical operations and integrates with Microsoft Paint to perform drawing tasks and add text. The project also includes functionality to send emails.
+
+## Features
+
+- **Mathematical Operations**: Perform basic arithmetic operations such as addition, subtraction, multiplication, division, and more.
+- **Drawing in Paint**: Automate drawing shapes (like rectangles) in Microsoft Paint using mouse movements.
+- **Text Addition**: Add text to the Paint canvas at specified coordinates.
+- **Email Sending**: Send emails using SMTP with configurable settings.
+
+## Installation
+
+To set up the project, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/dpkeee/EAG-Assignment4_mcppaint.git
+   cd EAG-Assignment4_mcppaint
+   ```
+
+2. Install the required packages. You can use `pip` to install the necessary dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   Make sure you have the following packages installed:
+   - `mcp`
+   - `Pillow`
+   - `pywinauto`
+   - `pyautogui`
+   - `smtplib`
+   - `win32api`
+   - `win32gui`
+   - `win32con`
+
+## Usage
+
+1. **Start the MCP Server**: Client itself will start the server,, so just run talk2mcp.py
+
+
+   ```bash
+   python talk2mcp.py
+   ```
+
+2. **Open Microsoft Paint**: Use the `open_paint` function to launch Paint.
+
+   ```python
+   await open_paint()
+   ```
+
+3. **Draw a Rectangle**: Call the `draw_rectangle` function with the desired coordinates.
+
+   ```python
+   await draw_rectangle(x1, y1, x2, y2)
+   ```
+
+4. **Add Text**: Use the `add_text_in_paint` function to add text to the canvas.
+
+   ```python
+   await add_text_in_paint("Your text here")
+   ```
+
+5. **Perform Calculations**: Use the provided mathematical functions to perform calculations.
+
+   ```python
+   result = add(5, 3)  # Example of addition
+   ```
+
+6. **Send an Email**: Use the `send_email` function to send an email.
+
+   ```python
+   send_email(to="recipient@example.com", subject="Subject", body="Email body")
+   ```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to the developers of the libraries used in this project.
+- Special thanks to the community for their support and contributions.
